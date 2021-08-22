@@ -36,7 +36,7 @@ def insertNode(findData, insertData) :
     current.link = node
     memory.append(node)
     return
-def deleteNode(deleteData) :
+def deleteNode(deleteData) :        # 노드에서 삭제
     global memory, head, current, pre
     if head.data == deleteData :
         current = head
@@ -51,7 +51,7 @@ def deleteNode(deleteData) :
             pre.link = current.link
             del(current)
             return
-def findNode(findData) :
+def findNode(findData) :        # 노드 찾기
     global memory, head, current, pre
     if head.data == findData :
         current = head
